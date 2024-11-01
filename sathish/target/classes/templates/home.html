@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bukoe - Read Novels, Journals, and Non-fictions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo"><div th:if="${users != null}">
+               
+            <p th:each="user : ${users}">
+                <span th:text="${user.name}">User Name</span> 
+       
+    </div></div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Read Novels, Journals, and Non-fictions you like, </h1>
+            <div class="search-bar">
+                <input type="text" placeholder="Search books, journals, etc.">
+                <button>Search</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fGJvb2tzfGVufDB8fHx8MTY5ODc1NjExMg&ixlib=rb-4.0.3&q=80&w=1080" alt="Stack of books">
+        </div>
+    </section>
+
+    <!-- Category Section -->
+    <section class="category">
+        <h2>Category</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDEyfHx1bml2ZXJzZXxlbnwwfHx8fDE2OTg3NTYxMTI&ixlib=rb-4.0.3&q=80&w=400" alt="Science of the Universe">
+                <p>Science of the Universe</p>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="Exploring Nature">
+                <p>Exploring Nature</p>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1528207776546-365bb710ee93?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="Fiction Book Part 1">
+                <p>Fiction Book Part 1</p>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1451186859696-371d9477be93?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHNwYWNlfGVufDB8fHx8MTY5ODc1NjExMg&ixlib=rb-4.0.3&q=80&w=400" alt="Learn about Space">
+                <p>Learn about Space</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
